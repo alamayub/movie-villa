@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_villa/screens/movie_villa.dart';
+import 'package:movie_villa/screens/view_detail.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         iconTheme: IconThemeData(
           size: 20
         ),
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MovieVilla(),

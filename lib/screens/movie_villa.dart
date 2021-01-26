@@ -4,6 +4,7 @@ import 'package:flutter/rendering.dart';
 import 'package:movie_villa/bloc/get_movies_bloc.dart';
 import 'package:movie_villa/models/movie.dart';
 import 'package:movie_villa/models/movie_response.dart';
+import 'package:movie_villa/screens/view_detail.dart';
 
 class MovieVilla extends StatefulWidget {
   @override
@@ -84,7 +85,7 @@ class _MovieVillaState extends State<MovieVilla> {
       physics: BouncingScrollPhysics(),
       itemBuilder: (context, index) => GestureDetector(
         onTap: () {
-          print('${movies[index]}');
+          Navigator.push(context, MaterialPageRoute(builder: (context) => ViewDetail(movie: movies[index]) ));
         },
         child: Card(
           elevation: 6,
