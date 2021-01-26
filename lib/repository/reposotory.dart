@@ -8,9 +8,6 @@ class MovieRepository {
   var getMoviesUrl = '$mainUrl/discover/movie';
 
   Future<MovieResponse> getMovies() async {
-    // Response response = await _dio.get('https://api.themoviedb.org/3/movie/550?api_key=add0b3dd2f97f0d1b15f491aa82b0aea');
-    // print('${response.data}');
-    // return MovieResponse.fromJson(response.data);
     var params = {
       'api_key': apiKey,
       'language': 'en-US',
