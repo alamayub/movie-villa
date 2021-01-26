@@ -13,6 +13,9 @@ class MyApp extends StatelessWidget {
       title: 'Movie Villa',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        iconTheme: IconThemeData(
+          size: 20
+        ),
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
